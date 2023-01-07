@@ -8,9 +8,9 @@ import { HiOutlineEmojiHappy } from 'react-icons/hi';
 
 const Hero = ({ drawer, toggle }) => {
     return (
-        <div className="bg-hero-bg bg-no-repeat bg-cover h-full w-auto pb-24">
-            <div className='md:flex items-start h-full gap-3 pt-24 md:pl-20'>
-                <div className='shadow-xl w-full md:w-3/4'>
+        <section className="bg-hero-bg bg-no-repeat bg-cover h-full w-auto pb-24">
+            <div className='flex items-start h-full gap-3 pt-24 md:pl-20'>
+                <div className='shadow-xl w-3/4'>
                     <div className='relative'>
                         <video height="600" controls className='relative w-full' >
                             <source src={video} type="video/mp4" />
@@ -27,7 +27,7 @@ const Hero = ({ drawer, toggle }) => {
                 </div>
 
                 {/* chat box */}
-                <div className='h-[600px] w-full md:w-[25%] bg-[#18181b] shadow-xl relative text-white border rounded-sm'>
+                <div className='h-[600px] w-[25%] bg-[#18181b] shadow-xl relative text-white border rounded-sm'>
                     <div className='flex justify-between py-3 px-4 border-b border-gray-300 shadow-md'>
                         <h2 className='text-lg font-medium'>Stream Chat</h2>
                         <BsPeople className='text-xl' />
@@ -125,7 +125,7 @@ const Hero = ({ drawer, toggle }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
