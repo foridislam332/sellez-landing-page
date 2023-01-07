@@ -9,14 +9,15 @@ import { HiOutlineEmojiHappy } from 'react-icons/hi';
 const Hero = ({ drawer, toggle }) => {
     return (
         <div className="bg-hero-bg bg-no-repeat bg-cover h-full w-auto pb-24">
-            <div className='flex items-start h-full gap-3 pt-24 pl-20'>
-                <div className='shadow-xl w-3/4'>
+            <div className='md:flex items-start h-full gap-3 pt-24 md:pl-20'>
+                <div className='shadow-xl w-full md:w-3/4'>
                     <div className='relative'>
                         <video height="600" controls className='relative w-full' >
                             <source src={video} type="video/mp4" />
                         </video>
                         <span className='text-red-500 font-bold text-xl uppercase absolute top-2 right-3 z-20'>Live</span>
                     </div>
+
                     <div className='flex justify-around gap-4 py-3'>
                         <button className='py-2 px-3 text-white text-lg font-semibold bg-[#5c17c5] flex items-center border border-[#5c17c5] hover:bg-transparent hover:text-black transition-all duration-75 ease-in-out'><AiOutlinePlayCircle className='mr-2 text-2xl' /> Start Stream</button>
 
@@ -25,7 +26,8 @@ const Hero = ({ drawer, toggle }) => {
                     </div>
                 </div>
 
-                <div className='h-[600px] w-[25%] bg-[#18181b] shadow-xl relative text-white border rounded-sm'>
+                {/* chat box */}
+                <div className='h-[600px] w-full md:w-[25%] bg-[#18181b] shadow-xl relative text-white border rounded-sm'>
                     <div className='flex justify-between py-3 px-4 border-b border-gray-300 shadow-md'>
                         <h2 className='text-lg font-medium'>Stream Chat</h2>
                         <BsPeople className='text-xl' />
